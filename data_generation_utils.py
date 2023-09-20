@@ -6,6 +6,11 @@ from google.colab import drive
 import data_generation_config as config
 import json
 
+# Importing constants from data_generation_config
+n_samples = config.N_SAMPLES
+n_target_store_ids = config.N_TARGET_STORE_IDS
+n_creative_pack_ids = config.N_CREATIVE_PACK_IDS
+
 # Data Generation Functions
 def lower_string(length, string1=''): 
     result = string1+''.join((random.choice(string.ascii_lowercase) for x in range(length)))
