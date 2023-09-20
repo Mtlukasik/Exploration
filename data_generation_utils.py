@@ -15,9 +15,9 @@ n_creative_pack_ids = config.N_CREATIVE_PACK_IDS
 def lower_string(length, string1=''): 
     result = string1+''.join((random.choice(string.ascii_lowercase) for x in range(length)))
     return result
-
-def generate_data():
     
+def generate_data():
+    global n_target_store_ids, n_creative_pack_ids, n_samples
     target_store_ids = {i:lower_string(10,'target_') for i in (range(0, n_target_store_ids))}
     creative_pack_ids = {i:lower_string(10,'creative_') for i in (range(0, n_creative_pack_ids))}
     
